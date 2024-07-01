@@ -1,7 +1,3 @@
-Here's a README file for your "Travel Chronicles" project:
-
----
-
 # Travel Chronicles
 
 Travel Chronicles is a travel journal app that allows users to document their trips, adventures, family vacations, or any kind of journeys by writing personal diaries and uploading pictures. Users have the option to make their journals public, enabling others to read about their experiences and discover new places.
