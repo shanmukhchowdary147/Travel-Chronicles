@@ -1,0 +1,173 @@
+.heroContent {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  max-width: 100%;
+  align-self: stretch;
+
+  /* justify-content: center; */
+  padding: var(--padding-xl) 200px;
+  padding-top: var(--padding-21xl);
+  box-sizing: border-box;
+  flex-shrink: 0;
+  overflow: hidden;
+  height: 300px;
+  gap: var(--gap-41xl);
+  text-align: left;
+  font-size: var(--font-size-21xl);
+  color: var(--color-black);
+  font-family: var(--font-roboto);
+  /* background-color: var(--); */
+  background-color: var(--color-gray-200);
+  color: var(--color-white);
+}
+.heroContent {
+  flex-wrap: wrap;
+  gap: var(--gap-41xl);
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  max-width: 100%;
+  gap: var(--gap-5xl);
+  padding-top: var(--padding-43xl);
+}
+.title,
+.description {
+  align-self: stretch;
+  position: relative;
+  margin: 0;
+}
+.title {
+  font-size: inherit;
+  line-height: 48px;
+  font-weight: 700;
+  font-family: inherit;
+}
+.description {
+  font-size: var(--font-size-base);
+  line-height: 24px;
+}
+.inputContainer {
+  display: flex;
+  max-width: 100%;
+  width: 360px;
+  /* overflow: hidden; */
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+.inputPlaceholder {
+  width: 100%;
+  border: 1px solid var(--color-gray-400);
+  outline: 0;
+  font-family: var(--font-roboto);
+  font-size: var(--font-size-sm);
+  background-color: var(--color-white);
+  border-radius: var(--br-7xs);
+  height: 20px;
+  flex: 1;
+  position: relative;
+  line-height: 20px;
+  color: var(--color-gray-100);
+  text-align: left;
+  padding: var(--padding-7xs) var(--padding-2xs);
+  display: inline-block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  min-width: 202px;
+  max-width: 100%;
+}
+.buttonGroup {
+  display: flex;
+  flex-direction: row;
+  gap: var(--gap-xs);
+  max-width: 100%;
+  width: 492px;
+  overflow: hidden;
+}
+.primaryButton,
+.secondaryButton {
+  cursor: pointer;
+  padding: var(--padding-3xs) var(--padding-xl);
+  border-radius: var(--br-5xs);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+  width: 210px;
+}
+.primaryButton {
+  border: 0;
+  background-color: var(--color-black);
+  color: var(--color-white);
+}
+.primaryButton:hover {
+  background-color: var(--color-darkslategray);
+}
+.secondaryButton {
+  border: 1px solid rgb(212, 212, 212);
+  background-color: transparent;
+  color: rgb(212, 212, 212);
+}
+.secondaryButton:hover {
+  background-color: var(--color-darkslategray-100);
+  border: 1px solid var(--color-darkslategray);
+}
+.textArea {
+  border: 0;
+  background-color: var(--color-gainsboro);
+  /* height: 400px; */
+  /* width: 400px */
+  outline: 0;
+  position: relative;
+  flex: 1;
+  min-width: auto;
+  max-width: 550px;
+  max-height: 400px;
+}
+
+.sectionChild {
+  object-fit: contain;
+  width: 200px;
+  height: 200px;
+}
+
+@media screen and (max-width: 1150px) {
+  .heroContent {
+    gap: var(--gap-11xl);
+  }
+}
+@media screen and (max-width: 1050px) {
+  .title {
+    font-size: var(--font-size-13xl);
+    line-height: 38px;
+  }
+  .heroContent {
+    height: auto;
+  }
+}
+@media screen and (max-width: 750px) {
+  .heroContent {
+    gap: var(--gap-11xl);
+    padding-top: var(--padding-20xl);
+    padding-bottom: var(--padding-20xl);
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 450px) {
+  .title {
+    font-size: var(--font-size-5xl);
+    line-height: 29px;
+  }
+  .buttonGroup {
+    flex-wrap: wrap;
+  }
+  .textArea {
+    min-width: 100%;
+  }
+}

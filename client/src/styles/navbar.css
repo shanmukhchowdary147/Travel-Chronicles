@@ -1,0 +1,134 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+  color: black;
+}
+
+.navbar-container {
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 70px; /* Set the height of the navbar */
+  margin-bottom: 70px; /* Push the content down by the height of the navbar */
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  padding: 10px 7%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 100;
+}
+
+.navbar-logo {
+  color: white;
+  font-weight: 900;
+  font-size: 1.5rem;
+}
+
+.menu-bar-checkbox {
+  display: none;
+}
+
+.menu-bar-label {
+  font-size: 1.5rem;
+  color: white;
+  cursor: pointer;
+  display: none;
+}
+
+.navbar {
+  display: flex;
+}
+
+.navbar-list {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+.navbar-link {
+  color: white;
+  font-size: 1.1rem;
+  padding: 20px;
+  display: block;
+  transition: all 0.3s;
+}
+
+.navbar-link:hover {
+  transform: translateY(-1px);
+  border-bottom: solid 2px white;
+}
+
+.profile-container {
+  display: flex;
+  align-items: center;
+}
+
+.profile-picture {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-top: 10px;
+}
+
+.profile-picture img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.username-container {
+  display: none;
+}
+
+@media (max-width: 800px) {
+  .navbar-container {
+    height: 70px; /* Adjust this value if the navbar height changes for smaller screens */
+  }
+
+  .menu-bar-label {
+    display: initial;
+  }
+
+  .navbar {
+    position: fixed;
+    top: 70px;
+    left: -100%;
+    text-align: center;
+    background: white;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    display: block;
+    transition: all 0.3s ease;
+    width: 100%;
+  }
+
+  .profile-picture {
+    display: none;
+  }
+
+  .username-container {
+    font-weight: bolder;
+    display: block;
+  }
+
+  .navbar-link {
+    color: black;
+  }
+
+  .navbar-link:hover {
+    transform: translateY(-1px);
+    border-bottom: none;
+  }
+
+  .navbar-list li {
+    width: 100%;
+  }
+
+  .menu-bar-checkbox:checked ~ .navbar {
+    left: 0;
+  }
+}
