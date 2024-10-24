@@ -1,0 +1,96 @@
+.home-container {
+  /* background-color: #f7f7f7; */
+}
+.top-bar {
+  width: 80%;
+  height: 500px; /* Adjust the height as needed */
+  /* background-image: url("../assets/images/adevnture-bg.jpg"); */
+  background-size: cover;
+  background-position: center;
+  margin-top: 70px;
+}
+.search {
+  position: relative;
+  /* background-color: var(--light-blue); */
+  height: 300px;
+  background-size: cover;
+  background-color: var(--color-gray-200);
+  color: var(--color-white);
+}
+
+.TopSection {
+  /* background-color: var(--color-graylight); */
+  height: 200px;
+}
+
+.searchBackground #surfer {
+  background-attachment: fixed;
+  background-size: cover;
+  height: 800px;
+  width: 100%;
+  filter: brightness(60%);
+}
+
+.searchBar {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.searchBar h2 {
+  color: var(--dark);
+  text-align: center;
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+.searchInput {
+  background-color: white;
+  padding: 5px 10px;
+  /* border-radius: 50px; */
+  width: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid var(--color-gray-100);
+  border-radius: var(--br-7xs);
+}
+
+.searchInput input {
+  border: none;
+  height: 30px;
+  width: 70%;
+  padding: 0 10px;
+}
+
+.searchInput input:focus {
+  outline: none;
+}
+
+.searchInput .icon {
+  cursor: pointer;
+}
+
+.searchedPosts {
+  width: 85%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+  /* background-color: white; */
+  padding: 20px;
+  /* background: var(--color-grayverylight); */
+}
+
+.loading {
+  color: white;
+  font-family: "Kaushan Script", cursive;
+}
+
+@media screen and (max-width: 700px) {
+  .searchInput {
+    width: 300px;
+  }
+}

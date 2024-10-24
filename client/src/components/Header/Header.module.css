@@ -1,0 +1,205 @@
+/* .topBarChild {
+  height: 40px;
+  width: 40px;
+  position: relative;
+  border-radius: var(--br-81xl);
+  background-color: var(--color-gray-400);
+} */
+@import url("https://fonts.googleapis.com/css2?family=Luxurious+Script&display=swap");
+
+.logoTitle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.titleText {
+  position: relative;
+  padding: 0 15px;
+}
+
+.titleText::before,
+.titleText::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 30px;
+  height: 1px;
+  background-color: currentColor; /* This will use the same color as the text */
+}
+
+.titleText::before {
+  left: -30px;
+}
+
+.titleText::after {
+  right: -30px;
+}
+
+.logoTitle {
+  margin: 0;
+  align-self: stretch;
+  position: relative;
+  line-height: 36px;
+  font-family: "Luxurious Script", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 50px;
+  white-space: nowrap;
+}
+.titleWrapper {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-11xs) 0 0;
+  box-sizing: border-box;
+  max-width: 100%;
+}
+.tab {
+  text-decoration: none;
+  position: relative;
+  line-height: 24px;
+  color: inherit;
+  display: inline-block;
+  min-width: 44px;
+}
+.tabContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-7xs) 0 0;
+}
+.tab1 {
+  text-decoration: none;
+  position: relative;
+  line-height: 24px;
+  color: inherit;
+  display: inline-block;
+  min-width: 89px;
+  white-space: nowrap;
+}
+.tabContainer1 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-7xs) 0 0;
+}
+.tab2 {
+  text-decoration: none;
+  position: relative;
+  line-height: 24px;
+  color: inherit;
+  display: inline-block;
+  min-width: 46px;
+  cursor: pointer;
+}
+.tabContainer2 {
+  display: flex;
+  /* flex-direction: column; */
+  align-items: center;
+  justify-content: center;
+  gap: 3px;
+  padding: var(--padding-7xs) 0 0;
+  font-weight: 400;
+  font-size: 19px;
+}
+
+.icSearchIcon,
+.text {
+  height: 20px;
+  position: relative;
+}
+.text {
+  width: calc(100% - 34px);
+  border: 0;
+  outline: 0;
+  font-family: var(--font-roboto);
+  font-size: var(--font-size-sm);
+  background-color: transparent;
+  flex: 1;
+  line-height: 20px;
+  color: var(--color-gray-100);
+  text-align: left;
+  display: inline-block;
+  min-width: 96px;
+  white-space: nowrap;
+  padding: 0;
+}
+.icSearchIcon {
+  width: 20px;
+  min-height: 20px;
+}
+.tabContainerParent,
+.textfield {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+.textfield {
+  width: 200px;
+  border-radius: var(--br-7xs);
+  border: 1px solid var(--color-gray-400);
+  box-sizing: border-box;
+  justify-content: flex-start;
+  padding: var(--padding-7xs) var(--padding-6xs);
+  gap: var(--gap-9xs);
+}
+.tabContainerParent {
+  align-self: stretch;
+  justify-content: space-between;
+  gap: var(--gap-xl);
+}
+.topBar,
+.topBarInner {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  box-sizing: border-box;
+  /* max-width: 100%; */
+}
+.topBarInner {
+  width: 37%;
+  flex-direction: column;
+  font-size: var(--font-size-base);
+}
+.topBar {
+  align-self: stretch;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.12);
+  background-color: var(--color-white);
+  overflow: hidden;
+  flex-direction: row;
+  padding: var(--padding-7xl) 80px;
+  gap: var(--gap-xl);
+  top: 0;
+  z-index: 99;
+  position: sticky;
+  text-align: left;
+  font-size: var(--font-size-9xl);
+  color: var(--color-black);
+  font-family: var(--font-roboto);
+  border-bottom: 1px solid var(--color-gray-400);
+  /* padding: auto 40px; */
+}
+
+.logoRedirect {
+  text-decoration: none;
+  color: var(--color-black);
+  display: flex;
+  align-items: center;
+  justify-self: center;
+  gap: 4px;
+  /* color: rgb(8, 8, 165); */
+}
+
+@media screen and (max-width: 1350px) {
+  .tabContainerParent {
+    display: none;
+  }
+  .topBarInner {
+    width: 0;
+  }
+}
